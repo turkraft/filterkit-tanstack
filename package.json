@@ -1,0 +1,51 @@
+{
+  "name": "@turkraft/filterkit-tanstack",
+  "version": "1.0.0",
+  "description": "TanStack Table integration for FilterKit — convert TanStack Table column filters to filter expressions for Spring Filter backends.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turkraft/filterkit-tanstack.git"
+  },
+  "author": "Yusuf Torshid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turkraft/filterkit-tanstack/issues"
+  },
+  "homepage": "https://github.com/turkraft/filterkit-tanstack#readme",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "filterkit",
+    "tanstack",
+    "table",
+    "filter",
+    "spring-filter"
+  ],
+  "peerDependencies": {
+    "@turkraft/filterkit": "^1.0.0"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/torshid"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
